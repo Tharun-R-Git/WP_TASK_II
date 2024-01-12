@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>PAYMENT</title>
+    </head>
+    <body style="background-color: rgb(255, 145, 0);">
+        <h3>Payment Window</h3>
+        <h4>Total Price to Pay : Rs.28,300</h4>
+        <form name="payment" action="" method="post">
+
+            <fieldset style="border-radius: 15px; background-color: rgb(253, 97, 227);">
+                <legend ><b>DELIVERY ADDRESS DETAILS</b></legend>
+                <label for="door">Door Number : </label>
+                <input type="text" id="door" placeholder="Enter your Door Number" name="door" required>&nbsp;&nbsp;
+                <label for="Apt">Apartment/House : </label>
+                <input type="text" id="Apt" placeholder="Enter your Apartment name" name="Apt" required>&nbsp;&nbsp;
+    
+                <label for="Street">Street : </label>
+                <input type="text" id="Street" placeholder="Enter your Street" name="Street" required><br><br>
+    
+                <label for="City">City : </label>
+                <input type="text" id="City" placeholder="Enter your City" name="City" required>&nbsp;&nbsp;
+    
+                <label for="State">State : </label>
+                <input type="text" id="State" placeholder="Enter your State" name="State" required>&nbsp;&nbsp;
+    
+                <label for="Country">Country : </label>
+                <input type="text" id="Country" placeholder="Enter your Country" name="Country" required><br><br>
+    
+                <label for="Pincode">Pincode : </label>
+                <input type="text" id="Pincode" placeholder="Enter your Pincode" name="Pincode" maxlength="6" size="14" required>
+    
+            </fieldset><br>
+
+            <fieldset style="border-radius: 15px; background-color: rgb(79, 251, 185);">
+                <legend><b>PAYMENT DETAILS</b></legend>
+                <label for="Payment">Choose Payment Method : </label>
+                <select id="payment" name="payment">
+                    <option value="debit">Debit Card</option>
+                    <option value="debit">Credit Card</option>
+                    <option value="debit">Net Banking</option>
+                    <option value="debit">UPI</option>
+                </select>
+                <br>
+                <br>
+                <label for="name">Card Holder Name : </label>
+                <input type="text" id="name" name="name" placeholder="Enter Card Holder Name">
+                &nbsp;&nbsp;
+                <label for="number">Card Number : </label>
+                <input type="text" id="number" name="number" placeholder="Enter Card Number" maxlength="16" size="20">
+                <br><br>
+                <label for="Expiry">Card Expiry : </label>
+                <input type="text" id="Expiry" name="Expiry" placeholder="MM/YY" maxlength="4" size="3">
+                &nbsp;&nbsp;
+                <label for="CVV">Card CVV : </label>
+                <input type="password" id="CVV" name="CVV" placeholder="CVV" maxlength="3" size="3">
+                <br><br>
+
+                <label for="Gateway">Select Payment Gateway: </label><br><br>
+                    <input type="image" id="paytm" value="paytm" name="Gateway" src="paytm.png" height="80" width="160" style="border-radius: 10px;" required alt="paytm">&nbsp;&nbsp;        
+                    <input type="image" id="PayPal" value="PayPal" name="Gateway" src="paypal.jpg" height="80" width="160" style="border-radius: 10px;" required alt="paypal">&nbsp;&nbsp;              
+                    <input type="image" id="Razorpay" value="Razorpay" name="Gateway" src="razorpay.png" height="80" width="160" style="border-radius: 10px;" required alt="razorpay">
+                </fieldset>
+            <label for="Gateway"><h3>Confirm Payment</h3></label>
+            <input type="image" id="paytm" value="paytm" name="Gateway" src="order.png" height="80" width="250" style="border-radius: 10px;" required>
+        </form>
+    </body>
+</html>

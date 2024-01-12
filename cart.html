@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>
+            CART PAGE
+        </title>
+    </head>
+    <body style="background-color: rgb(255, 145, 0);">
+        <form onsubmit="return false"  oninput="res.value = Price.valueAsNumber * Quantity.valueAsNumber" style="text-align: center;">
+        
+        <fieldset>
+            <legend style="text-align: center;"><b>Item Price Calculator</b></legend>
+            <input type="number" placeholder="Price" id="Price" name="Price" />
+            x <input type="number" placeholder="Quantity" id="Quantity" name="Quantity" />
+            = <output for="quant name" name="res" /> <br>
+
+        </fieldset>
+        </form>
+
+
+        <form oninput="result.value = (Number(num1.value) || 0) + (Number(num2.value) || 0) + (Number(num3.value) || 0) + (Number(num4.value) || 0)">
+            <fieldset>
+                <legend style="text-align: center;"><b>Total Price Calculator</b></legend>
+            <input type="number" id="num1" name="num1" required placeholder="Enter Item 1 total"> +    
+            
+            <input type="number" id="num2" name="num2" required placeholder="Enter Item 2 total"> +     
+            
+            <input type="number" id="num3" name="num3" required placeholder="Enter Item 3 total"> +     
+            
+            <input type="number" id="num4" name="num4" required placeholder="Enter Item 4 total"> =    
+            
+            <output id="result" name="result"></output>
+        </fieldset>               
+        </form>
+    <div>
+        <center>
+        <table border="2px" style="text-align: center;background-color: rgb(0, 183, 255);padding: 10 10 10 10;border-radius: 10px;">
+            <caption style="font-weight: bolder;">Cart Items</caption>
+            
+                <th>Item Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Amount</th>
+            
+            <tr>
+                <td>Samsung Galaxy S22</td>
+                <td>Rs.25,000</td>
+                <td>1</td>
+                <td>Rs.25,000</td>
+            </tr>
+            <tr>
+                <td>Generative Deep Learning</td>
+                <td>Rs.2500</td>
+                <td>1</td>
+                <td>Rs.2500</td>
+            </tr>
+            <tr>
+                <td>Pen Stand</td>
+                <td>Rs.250</td>
+                <td>2</td>
+                <td>Rs.500</td>
+            </tr>
+
+            <tr>
+                <td>Parachute Oil</td>
+                <td>Rs.150</td>
+                <td>2</td>
+                <td>Rs.300</td>
+            </tr>
+
+
+            <tr>
+                <td colspan="3" style="text-align: right;">Total:</td>
+                <td>Rs.28,300</td>
+            </tr>
+            <tr>
+                <td colspan="4" style="text-align: right;"><a href="payment.html" target="_self"><img src="payment.png" name="add" width="225" height="100" alt="Payment" style="border-radius: 15px;"/></a></td>
+            </tr>
+        </table>
+        </center>
+    </div>
+    </body>
+</html>
